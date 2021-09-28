@@ -8,7 +8,13 @@ void main() {
     counter = Counter();
   });
 
-  test('test counter', () {
-    expect(counter.add(2, 3), 5);
+  group('test counter', () {
+    test('test add method', () {
+      expect(counter.add(2, 3), 5);
+    });
+
+    test('test sub method', () {
+      expect(counter.sub(2, 3), 5);
+    });
   });
 }
